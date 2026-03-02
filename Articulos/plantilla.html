@@ -11,10 +11,28 @@
     <canvas id="canvas-stars"></canvas>
 
     <nav class="navbar">
-        <div class="nav-left"><div class="menu-icon" id="menuBtn"><span></span><span></span><span></span></div></div>
+        <div class="nav-left">
+            <div class="menu-icon" id="menuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
         <div class="nav-center"><span class="nav-logo">Grimorio</span></div>
-        <div class="nav-right"><a href="#" class="nav-link">Log In</a><button class="nav-signup-btn">Sign Up</button></div>
+        <div class="nav-right">
+            <a href="#" class="nav-link">Log In</a>
+            <button class="nav-signup-btn">Sign Up</button>
+        </div>
     </nav>
+
+    <div id="mobileMenu" class="nav-menu-mobile">
+        <a href="../index.html">Inicio</a>
+        <hr style="border: 0.5px solid var(--gold); width: 50%; margin: 10px 0;">
+        <a href="#fundamentos">Fundamentos</a>
+        <a href="#grimorio">Grimorio Práctico</a>
+        <a href="#astrologia">Astrología</a>
+        <a href="#adivinacion">Adivinación</a>
+    </div>
 
     <div class="sub-navbar">
         <div class="sub-nav-container">
@@ -34,6 +52,50 @@
         <header class="article-header">
             <span class="category">Categoría del Artículo</span>
             <h1 class="magic-title">Título del Artículo Arcano</h1>
+            <p class="article-intro">Una breve introducción mística sobre lo que el buscador encontrará en estas líneas.</p>
+        </header>
+
+        <div class="article-layout">
+            <aside class="wiki-sidebar">
+                <div class="sidebar-box">
+                    <h4>Contenido</h4>
+                    <nav id="table-of-contents">
+                        <ul>
+                            <li><a href="#seccion1">✦ Introducción</a></li>
+                            <li><a href="#seccion2">✦ Simbolismo</a></li>
+                            <li><a href="#seccion3">✦ Correspondencias</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+
+            <article class="wiki-content">
+                <section id="seccion1">
+                    <h2 class="section-subtitle">Introducción</h2>
+                    <p>Aquí va el cuerpo del texto. El conocimiento fluye como las estrellas en el firmamento...</p>
+                </section>
+                
+                <section id="seccion2">
+                    <h2 class="section-subtitle">Simbolismo</h2>
+                    <p>Cada símbolo tiene un peso en el alma del mago.</p>
+                </section>
+            </article>
+
+            <aside class="infobox">
+                <div class="infobox-header">Ficha Técnica</div>
+                <img src="https://via.placeholder.com/250x150" alt="Imagen Arcano" class="infobox-img">
+                <table class="infobox-table">
+                    <tr><th>Elemento</th><td>Fuego</td></tr>
+                    <tr><th>Planeta</th><td>Marte</td></tr>
+                    <tr><th>Piedra</th><td>Rubí</td></tr>
+                </table>
+            </aside>
+        </div>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>
             <p class="article-intro">Una breve introducción mística sobre lo que el buscador encontrará en estas líneas.</p>
         </header>
 
