@@ -444,3 +444,85 @@ body {
         top: 100px;
     }
 }
+
+/* --- SUB-NAVBAR (Estilo de tu boceto) --- */
+.sub-navbar {
+    margin-top: 70px; /* Debajo de la nav principal */
+    background: rgba(212, 175, 55, 0.05);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    padding: 10px 20px;
+}
+
+.sub-nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.breadcrumb-link {
+    color: #ccc;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+}
+
+.category-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: var(--gold);
+    font-family: 'Cinzel', serif;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: #111;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+    border: 1px solid var(--gold);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.8rem;
+}
+
+.dropdown-content a:hover { background: var(--gold); color: black; }
+.category-dropdown:hover .dropdown-content { display: block; }
+
+/* --- SIDEBAR ÍNDICE --- */
+.wiki-sidebar {
+    display: none; /* Se oculta en móvil por defecto */
+}
+
+@media (min-width: 992px) {
+    .wiki-sidebar {
+        display: block;
+        flex: 0.5;
+    }
+    .sidebar-box {
+        position: sticky;
+        top: 150px;
+        border-left: 2px solid var(--gold);
+        padding-left: 15px;
+    }
+    .sidebar-box h4 { font-family: 'Cinzel'; color: var(--gold); margin-bottom: 10px; }
+    .sidebar-box ul { list-style: none; }
+    .sidebar-box a { color: #aaa; text-decoration: none; font-size: 0.85rem; transition: 0.3s; }
+    .sidebar-box a:hover { color: var(--gold); padding-left: 5px; }
+}
+
