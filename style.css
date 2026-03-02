@@ -526,3 +526,32 @@ body {
     .sidebar-box a:hover { color: var(--gold); padding-left: 5px; }
 }
 
+/* --- CORRECCIÓN DEL ÍNDICE --- */
+.wiki-sidebar ul {
+    list-style: none;    /* Esto quita los puntos azules */
+    padding: 0;
+    margin: 15px 0;
+}
+
+.wiki-sidebar li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1); /* Línea sutil decorativa */
+    padding-bottom: 5px;
+}
+
+.wiki-sidebar a {
+    text-decoration: none; /* Quita el subrayado azul */
+    color: var(--gold);    /* Usa el dorado que ya definiste */
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    display: block;
+    transition: 0.3s;
+}
+
+.wiki-sidebar a:hover {
+    color: #fff;
+    padding-left: 10px;    /* Efecto de desplazamiento al tocarlo */
+    text-shadow: 0 0 8px var(--glow);
+}
+
+
